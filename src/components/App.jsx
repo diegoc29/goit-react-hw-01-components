@@ -18,7 +18,7 @@
 
 import React from 'react';
 import Profile from './Profile'; 
-import user from 'path/to/user.json';
+import user from './user.json';
 
 const App = () => {
   return (

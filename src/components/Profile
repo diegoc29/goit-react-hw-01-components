@@ -1,37 +1,30 @@
 import React from 'react';
-import Profile from './Profile'; 
-import user from './user.json';
 
-const Profile = ({ username, tag, location, avatar, stats }) => {
+const Statistics = () => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img
-          src={avatar}
-          alt="User avatar"
-          className="avatar"
-        />
-        <p className="name">{username}</p>
-        <p className="tag">{`@${tag}`}</p>
-        <p className="location">{location}</p>
-      </div>
+    <section className="statistics">
+      <h2 className="title">Upload stats</h2>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+      <ul className="stat-list">
+        <li className="item">
+          <span className="label">.docx</span>
+          <span className="percentage">4%</span>
         </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+        <li className="item">
+          <span className="label">.mp3</span>
+          <span className="percentage">14%</span>
         </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+        <li className="item">
+          <span className="label">.pdf</span>
+          <span className="percentage">41%</span>
+        </li>
+        <li className="item">
+          <span className="label">.mp4</span>
+          <span className="percentage">12%</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
-export default Profile;
+export default Statistics;
